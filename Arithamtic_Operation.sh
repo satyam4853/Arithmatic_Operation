@@ -24,3 +24,8 @@ dictionary[key2]=$z
 dictionary[key3]=$r
 echo ${dictionary[@]}
 
+count=0;
+for i in ${dictionary[@]}
+do
+	resultArray[((count++))]=$i;
+done
