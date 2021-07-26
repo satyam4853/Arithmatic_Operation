@@ -43,3 +43,17 @@ do
 done
 echo "Array in Decending order:";
 echo ${resultArray[@]};
+for ((i=0;i<3;i++))
+do
+        for ((j=i+1;j<4;j++))
+        do
+                if ((${resultArray[i]} > ${resultArray[j]}))
+                then
+                        temp=${resultArray[$j]};
+                        resultArray[$j]=${resultArray[$i]};
+                        resultArray[$i]=$temp;
+                fi
+        done
+done
+echo "Array in Decending order:";
+echo ${resultArray[@]};
