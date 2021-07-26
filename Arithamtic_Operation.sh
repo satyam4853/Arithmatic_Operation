@@ -6,3 +6,7 @@ read -p "Enter value for c: " c
 
 x=$(($a + $b * $c))
 echo "output of equation " $x
+
+parttimehrs=8
+y=$[(($a * $b + $c))*$(($parttimehrs))]
+echo "work in hours" $y
